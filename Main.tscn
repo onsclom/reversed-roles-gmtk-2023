@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://StaticPolygon.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Polygon.tscn" type="PackedScene" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 132, 34 )
+
+[node name="StaticPolygon" parent="." instance=ExtResource( 2 )]
+position = Vector2( 138, 74 )
+
+[node name="Polygon" parent="StaticPolygon" instance=ExtResource( 3 )]
+polygon = PoolVector2Array( 14, -23, -42, -18, -20, 42, 52, 29 )
+
+[node name="StaticPolygon3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 279, 32 )
+
+[node name="Polygon" parent="StaticPolygon3" instance=ExtResource( 3 )]
+polygon = PoolVector2Array( 14, -23, -42, -18, -20, 42, 52, 29 )
+
+[node name="StaticPolygon4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 58, -78 )
+
+[node name="Polygon" parent="StaticPolygon4" instance=ExtResource( 3 )]
+polygon = PoolVector2Array( 14, -23, -42, -18, -20, 42, 52, 29 )
+
+[node name="StaticPolygon5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 238, -81 )
+
+[node name="Polygon" parent="StaticPolygon5" instance=ExtResource( 3 )]
+polygon = PoolVector2Array( 14, -23, -42, -18, -20, 42, 52, 29 )
+
+[node name="StaticPolygon2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 29, 44 )
+rotation = 1.1496
+
+[node name="Polygon" parent="StaticPolygon2" instance=ExtResource( 3 )]
+polygon = PoolVector2Array( 14, -23, -42, -18, -20, 42, 52, 29 )
