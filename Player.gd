@@ -24,3 +24,7 @@ func _process(delta):
 	var offset_x = fmod(player_body.position.x, triangles.spacing)
 	var offset_y = fmod(player_body.position.y, triangles.spacing)
 	triangles.position -= Vector2(offset_x, offset_y)
+
+
+func _on_LavaPolygons_body_entered(body:Node):
+	pass # Replace with function body.
