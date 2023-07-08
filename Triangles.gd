@@ -3,7 +3,7 @@ extends Node2D
 # preload Triangle
 var triangle = preload("res://Triangle.tscn")
 
-const grid_size = 12
+const grid_size = 15
 const spacing = 40
 
 # Called when the node enters the scene tree for the first time.

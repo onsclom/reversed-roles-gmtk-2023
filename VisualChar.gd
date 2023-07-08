@@ -23,15 +23,15 @@ func _draw():
 	rand.seed = 69
 
 	# draw circle
-	# draw_circle(Vector2(0, 0), 10, Color(0, 0, 0))
+	draw_circle(Vector2(0, 0), 10, Color(0, 0, 0))
 
-	# draw 10 random circles
-	for _i in range(50):
-		var r = rand.randf_range(0, 8)
-		var rotation = rand.randf_range(0, PI*2)
-		var x = r * cos(rotation)
-		var y = r * sin(rotation)
-		draw_circle(Vector2(x, y), 5, Color(0,0,0))
+	# # draw 10 random circles
+	# for _i in range(50):
+	# 	var r = rand.randf_range(0, 8)
+	# 	var rotation = rand.randf_range(0, PI*2)
+	# 	var x = r * cos(rotation)
+	# 	var y = r * sin(rotation)
+	# 	draw_circle(Vector2(x, y), 5, Color(0,0,0))
 
 	draw_circle(left.position, eye_radius, Color(1,1,1))
 	draw_circle(right.position, eye_radius, Color(1,1,1))

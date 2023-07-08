@@ -20,9 +20,27 @@
 
 X lets animation those eyes with springs
 X then lets get that traingle background going (prob on cpu)
-- then make starting area that teaches controls and looks decent!!!
+~ then make starting area that teaches controls and looks decent!!!
 
 - really simple first spiral level to teach left and right?
 - then we need a level that forces flip somehow..
 
 - what if blocks appear/disappear in different gravity flips?!
+
+- IT NEEDS NICE PASTEL MINAMLISTIC LOSPEC COLOR THEME
+- set animation speed lower on triangles further away!
+
+- sounds on fast wall bounces (maybe char blinks?)
+- particle effect on death
+
+- goal needs to be particle black hole thing!
+
+- needs time and deaths at end
+
+LEVEL / MECHANIC IDEAS:
+
+- red lava blocks that kill on touch!
+- moving red blocks
+- cannon that aims and shoots!
+- speed boosts?
+- areas that trap your gravity?

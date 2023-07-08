@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://PlayerBody.gd" type="Script" id=1]
 [ext_resource path="res://VisualChar.gd" type="Script" id=2]
+[ext_resource path="res://StrongHit.wav" type="AudioStream" id=3]
+[ext_resource path="res://addons/camera_shake/camera_scripts/shake_camera_2D.gd" type="Script" id=4]
+[ext_resource path="res://ChangeDir.wav" type="AudioStream" id=5]
 
 [sub_resource type="Curve" id=2]
 _data = [ Vector2( 0, 0.991081 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
@@ -28,9 +31,11 @@ color = Color( 0.360784, 0.360784, 0.360784, 1 )
 
 [node name="RotationNode" type="Node2D" parent="."]
 
-[node name="Camera2D" type="Camera2D" parent="RotationNode"]
+[node name="ShakeableCamera" type="Camera2D" parent="RotationNode"]
 rotating = true
 current = true
+zoom = Vector2( 1.5, 1.5 )
+script = ExtResource( 4 )
 
 [node name="VisualChar" type="Node2D" parent="RotationNode"]
 script = ExtResource( 2 )
@@ -43,3 +48,10 @@ position = Vector2( 5, -1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
+
+[node name="HitSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="SpaceSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.05
