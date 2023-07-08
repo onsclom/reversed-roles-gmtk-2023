@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Triangle" type="Polygon2D" parent="."]
+position = Vector2( 0, 2 )
+color = Color( 0.501961, 0.501961, 0.501961, 1 )
+polygon = PoolVector2Array( 0, 8, 8, -8, -8, -8 )

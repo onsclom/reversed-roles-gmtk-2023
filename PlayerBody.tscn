@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://PlayerBody.gd" type="Script" id=1]
+[ext_resource path="res://VisualChar.gd" type="Script" id=2]
+
+[sub_resource type="Curve" id=2]
+_data = [ Vector2( 0, 0.991081 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="PlayerBody" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+visible = false
+lifetime = 0.01
+local_coords = false
+emission_shape = 1
+emission_sphere_radius = 5.0
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 2.0
+angle = 720.0
+angle_random = 1.0
+scale_amount = 7.0
+scale_amount_curve = SubResource( 2 )
+color = Color( 0.360784, 0.360784, 0.360784, 1 )
+
+[node name="RotationNode" type="Node2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="RotationNode"]
+rotating = true
+current = true
+
+[node name="VisualChar" type="Node2D" parent="RotationNode"]
+script = ExtResource( 2 )
+
+[node name="Left" type="Position2D" parent="RotationNode/VisualChar"]
+position = Vector2( -5, -1 )
+
+[node name="Right" type="Position2D" parent="RotationNode/VisualChar"]
+position = Vector2( 5, -1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )

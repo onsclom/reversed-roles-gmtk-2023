@@ -15,3 +15,14 @@
 
 - lospec color schemes are godlike! REMEMBer this..
 - maybe i dynamically change colorscheme for levels?!!?!? yessss
+
+=================
+
+X lets animation those eyes with springs
+X then lets get that traingle background going (prob on cpu)
+- then make starting area that teaches controls and looks decent!!!
+
+- really simple first spiral level to teach left and right?
+- then we need a level that forces flip somehow..
+
+- what if blocks appear/disappear in different gravity flips?!
