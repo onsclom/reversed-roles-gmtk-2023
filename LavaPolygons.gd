@@ -1,9 +1,12 @@
-extends StaticBody2D
+extends Area2D
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
+
+# load DeathParticles.tscn
+var DeathParticles = preload("res://DeathParticles.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -22,3 +25,18 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_LavaPolygons_body_entered(body):
+	# instantiate particles at the player's position
+	var particles = DeathParticles.instance()
+	particles.position = body.position
+	# add particles in current scene
+	add_child(particles)
+	particles.emitting = true
+
+	print("TOUCHED LAVA")
+	SceneManager.lose_level_and_reset()
+
+
+	pass # Replace with function body.

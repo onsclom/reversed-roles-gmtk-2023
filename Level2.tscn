@@ -1,0 +1,260 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://LavaPolygons.gd" type="Script" id=1]
+[ext_resource path="res://LevelPolygons.gd" type="Script" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Goal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Level3.tscn" type="PackedScene" id=5]
+
+[node name="Level2" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+
+[node name="LavaPolygons" type="Area2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Polygon2D" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 28, -105 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 253, 2, 251, 37, 105, 6 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 260, -222 )
+rotation = 3.00153
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 253, 2, 251, 37, 105, 6 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 822, -55 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 58, -47, -120, -1, 61, 34 )
+
+[node name="Polygon2D5" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( -400, -464 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 53, -41, -152, -40, -63, 49, 232, 48 )
+
+[node name="Polygon2D11" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( -342.905, -616 )
+scale = Vector2( 1.93684, 1 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 53, -41, -46, -56, 61.3913, 48, 144, 16 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 244, -344 )
+rotation = -0.106591
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 60, -34, -120, -1, 63, 27 )
+
+[node name="Polygon2D6" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 600, 136 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D12" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( -528, -688 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D26" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( -760, -736 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D17" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( -624, -504 )
+rotation = 0.243422
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D7" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 1144, -544 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D8" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 1080, -608 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D9" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 1080, -480 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D10" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 1016, -544 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D23" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 952, -480 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D24" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 696, -608 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D25" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 760, -672 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D27" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 632, -672 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D28" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 632, -544 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D13" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 952, -608 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D14" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 888, -672 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D15" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 888, -544 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D16" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 824, -608 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D18" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 760, -544 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D19" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 888, -544 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D20" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 824, -608 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D21" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 824, -480 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="Polygon2D22" type="Polygon2D" parent="LavaPolygons"]
+position = Vector2( 760, -544 )
+scale = Vector2( 0.25, 0.25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -64, 64, 0, 0, 64, -64, 0 )
+
+[node name="LevelPolygons" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 2 )
+
+[node name="Polygon2D" type="Polygon2D" parent="LevelPolygons"]
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 255, 47, -109, 37, -272, 457, 606, 409 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 216, -86 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 271, 50, 190, -141, 24, -60, -8, 164, 13, 355, 259, 361 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 5, 0 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 31, -218, 22, 281, -310, 332, -313, -339, 20, -403 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 296, -1088 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 54, -71, -69, -69, -66, 59, 86, 56 )
+
+[node name="Polygon2D15" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -153.484, -888.207 )
+scale = Vector2( 3.64516, 1.22385 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 99.1681, -182.86, -54.4602, -705.802, -162, -150.177, -109.327, 91.6838, 86, 56 )
+
+[node name="Polygon2D14" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -688, -1352 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 336, -416, -256, -184, -552, 40, -192, 352, 456, 376 )
+
+[node name="Polygon2D13" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -928, -864 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 184, -360, -160, -392, -464, -16, -240, 296, 86, 56 )
+
+[node name="Polygon2D12" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -672, -536 )
+scale = Vector2( 0.909677, 1.16154 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( -195.418, -257.821, -571.631, -192.848, -582.369, -9.87418, -371.305, 231.185, 464.156, 348.271, 86, 56 )
+
+[node name="Polygon2D11" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -496, -720 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 136, -232, -72, -112, -40, 48, 304, 88, 480, 56, 640, -160 )
+
+[node name="Polygon2D10" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -584, -448 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 54, -71, -69, -69, -66, 59, 392, 424, 304, 8 )
+
+[node name="Polygon2D9" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -63.1097, -417.7 )
+scale = Vector2( 1.0129, 0.3 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 54, -71, -253.618, -127.667, -443.172, -47.6666, -229.924, 779, 86, 56 )
+
+[node name="Polygon2D6" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 303, -489 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( -200, -399, -329, -249, -66, 59, 86, 56, 351, -369 )
+
+[node name="Polygon2D5" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 329, -208 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 100, -384, -102, -227, -66, 59, 148, 320, 385, -122 )
+
+[node name="Polygon2D7" type="Polygon2D" parent="LevelPolygons"]
+
+[node name="Polygon2D8" type="Polygon2D" parent="LevelPolygons"]
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 200, -512, -192, -632, -144, -792, 136, -800 )
+
+[node name="Goal" parent="." instance=ExtResource( 4 )]
+position = Vector2( -736, -920 )
+scene_file = ExtResource( 5 )
+
+[connection signal="body_entered" from="LavaPolygons" to="LavaPolygons" method="_on_LavaPolygons_body_entered"]

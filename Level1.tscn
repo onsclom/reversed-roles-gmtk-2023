@@ -1,0 +1,133 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Level2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://LevelPolygons.gd" type="Script" id=2]
+[ext_resource path="res://Goal.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+
+[node name="LevelPolygons" type="StaticBody2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Polygon2D" type="Polygon2D" parent="LevelPolygons"]
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 232, 32, 80, 96, -8, 288, 304, 328, 608, 16 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="LevelPolygons"]
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( -104, -24, 168, 120, 256, 336, -168, 376, -256, -32 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="LevelPolygons"]
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 48, -128, 80, 104, -216, -40 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 320, -56 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 120, 80, -88, 104, -112, -96 )
+
+[node name="Polygon2D5" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -96, -120 )
+rotation = 0.835682
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 120, 80, -88, 104, -112, -96 )
+
+[node name="Polygon2D6" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 16, -240 )
+rotation = 0.835682
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 120, 80, -88, 104, -112, -96 )
+
+[node name="Polygon2D7" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 344, -160 )
+rotation = 0.835682
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 110.967, -158.513, 120, 80, -84.7087, 117.543, -109.087, -141.774 )
+
+[node name="Polygon2D8" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 344, -328 )
+rotation = -0.27355
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 45.6621, -103.513, 45.273, 45.9387, -88, 104, -112, -96 )
+
+[node name="Polygon2D9" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 488, -88 )
+rotation = -0.27355
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 223.097, 4.43495, -88, 104, -112, -96 )
+
+[node name="Polygon2D10" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 648, -112 )
+rotation = -0.27355
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 120, 80, -88, 104, -112, -96 )
+
+[node name="Polygon2D12" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 800, -208 )
+rotation = -0.27355
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 120, 80, -234.845, 67.0492, -112, -96 )
+
+[node name="Polygon2D18" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 848, -336 )
+rotation = -1.34116
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 229.755, -176.942, 279.934, -32.5742, -88, 104, -112, -96 )
+
+[node name="Polygon2D19" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 792, -552 )
+rotation = -2.08328
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 229.755, -176.942, 279.934, -32.5742, -88, 104, -112, -96 )
+
+[node name="Polygon2D11" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 240, -448 )
+rotation = -0.866458
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 76.8202, -107.269, 81.0517, 120.094, -88, 104, -112, -96 )
+
+[node name="Polygon2D13" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -48, -432 )
+rotation = -1.50008
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 120, 80, -88, 104, -112, -96 )
+
+[node name="Polygon2D14" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 40, -632 )
+rotation = -0.590283
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 120, 80, -88, 104, -112, -96 )
+
+[node name="Polygon2D15" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 312, -688 )
+rotation = -2.63875
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 120, 80, -230.62, 145.102, -112, -96 )
+
+[node name="Polygon2D17" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 496, -552 )
+rotation = -2.14566
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 132.388, -57.2147, -207.47, 84.8292, -276.128, -74.0359, -59.2, -114.61 )
+
+[node name="Polygon2D16" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 120, -752 )
+rotation = -4.31944
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 88, -112, 120, 80, -88, 104, -112, -96 )
+
+[node name="TutorialKeys" type="Node2D" parent="."]
+position = Vector2( 72, -46 )
+
+[node name="Wasd" type="Node2D" parent="TutorialKeys"]
+position = Vector2( -31, 2 )
+
+[node name="Wasd2" type="Node2D" parent="TutorialKeys"]
+position = Vector2( 20, 2 )
+
+[node name="Goal2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 520, -592 )
+scene_file = ExtResource( 1 )

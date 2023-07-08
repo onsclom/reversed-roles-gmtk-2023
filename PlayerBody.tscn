@@ -34,7 +34,7 @@ color = Color( 0.360784, 0.360784, 0.360784, 1 )
 [node name="ShakeableCamera" type="Camera2D" parent="RotationNode"]
 rotating = true
 current = true
-zoom = Vector2( 1.5, 1.5 )
+zoom = Vector2( 1.25, 1.25 )
 script = ExtResource( 4 )
 
 [node name="VisualChar" type="Node2D" parent="RotationNode"]
