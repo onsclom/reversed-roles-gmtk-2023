@@ -3,7 +3,7 @@
 [ext_resource path="res://Goal.gd" type="Script" id=1]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 35.0
+radius = 30.0
 
 [sub_resource type="Curve" id=2]
 _data = [ Vector2( 0.00492611, 0.975822 ), 0.0, 0.0, 0, 0, Vector2( 0.995074, 0 ), 0.0, 0.0, 0, 0 ]
@@ -26,6 +26,6 @@ angle = 720.0
 angle_random = 1.0
 scale_amount = 40.0
 scale_amount_curve = SubResource( 2 )
-color = Color( 0, 0, 0, 1 )
+color = Color( 0, 1, 0.0627451, 1 )
 
 [connection signal="body_entered" from="." to="." method="_on_Goal_body_entered"]

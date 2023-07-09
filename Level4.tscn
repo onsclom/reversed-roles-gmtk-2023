@@ -1,0 +1,132 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://LavaPolygons.gd" type="Script" id=1]
+[ext_resource path="res://LevelPolygons.gd" type="Script" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Goal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://LavaSpinner.gd" type="Script" id=5]
+
+[node name="Level3" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, -8 )
+
+[node name="LavaPolygons" type="Area2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="LevelPolygons" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 2 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 120, 80 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 120, -40, 1264, 784, -1240, 648, -112, -40 )
+
+[node name="Polygon2D" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 8, -1448 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 16, -16, 16, 16, -16, 16, -16, -16 )
+
+[node name="Polygon2D5" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -208, -992 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 336, 88, 224, 280, -744, 200, -392, -856, 296, -1032 )
+
+[node name="Polygon2D6" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 88, -1000 )
+scale = Vector2( 0.985185, 1 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 8.1203, 104, 146.165, 288, 990.677, 152, 1006.92, -344, 657.744, -960, -113.684, -952 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( -36, -508 )
+scale = Vector2( 3.25, 12.75 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 16, -16, 13.5385, 44.2353, -235.077, 105.725, -237.538, -49.2549 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="LevelPolygons"]
+position = Vector2( 272, -152 )
+rotation = -3.14159
+scale = Vector2( 3.25, 12.75 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 16, -16, 13.5385, 44.2353, -243.691, 92.863, -246.155, -68.3919 )
+
+[node name="Goal" parent="." instance=ExtResource( 4 )]
+position = Vector2( 120, -792 )
+
+[node name="LavaSpinner" type="Area2D" parent="."]
+position = Vector2( 120, -120 )
+script = ExtResource( 5 )
+speed = 0.5
+
+[node name="Polygon2D" type="Polygon2D" parent="LavaSpinner"]
+rotation = 1.57079
+scale = Vector2( 1.4, 1 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 80, -8, 80, 8, -80, 8, -80, -8 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="LavaSpinner"]
+rotation = 3.14159
+scale = Vector2( 1.4, 1 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 80, -8, 80, 8, -80, 8, -80, -8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LavaSpinner"]
+polygon = PoolVector2Array( 8, -112, -8, -112, -8, 112, 8, 112 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="LavaSpinner"]
+polygon = PoolVector2Array( 112, -8, -112, -8, -112, 8, 112, 8 )
+
+[node name="LavaSpinner2" type="Area2D" parent="."]
+position = Vector2( 120, -568 )
+script = ExtResource( 5 )
+speed = 0.5
+
+[node name="Polygon2D" type="Polygon2D" parent="LavaSpinner2"]
+rotation = 1.57079
+scale = Vector2( 1.4, 1 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 80, -8, 80, 8, -80, 8, -80, -8 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="LavaSpinner2"]
+rotation = 3.14159
+scale = Vector2( 1.4, 1 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 80, -8, 80, 8, -80, 8, -80, -8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LavaSpinner2"]
+polygon = PoolVector2Array( 8, -112, -8, -112, -8, 112, 8, 112 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="LavaSpinner2"]
+polygon = PoolVector2Array( 112, -8, -112, -8, -112, 8, 112, 8 )
+
+[node name="LavaSpinner3" type="Area2D" parent="."]
+position = Vector2( 120, -344 )
+script = ExtResource( 5 )
+speed = 0.5
+reversed = true
+
+[node name="Polygon2D" type="Polygon2D" parent="LavaSpinner3"]
+rotation = 1.57079
+scale = Vector2( 1.4, 1 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 80, -8, 80, 8, -80, 8, -80, -8 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="LavaSpinner3"]
+rotation = 3.14159
+scale = Vector2( 1.4, 1 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 80, -8, 80, 8, -80, 8, -80, -8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LavaSpinner3"]
+polygon = PoolVector2Array( 8, -112, -8, -112, -8, 112, 8, 112 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="LavaSpinner3"]
+polygon = PoolVector2Array( 112, -8, -112, -8, -112, 8, 112, 8 )
+
+[connection signal="body_entered" from="LavaPolygons" to="LavaPolygons" method="_on_LavaPolygons_body_entered"]
+[connection signal="body_entered" from="LavaSpinner" to="LavaSpinner" method="_on_LavaSpinner_body_entered"]
+[connection signal="body_entered" from="LavaSpinner2" to="LavaSpinner2" method="_on_LavaSpinner_body_entered"]
+[connection signal="body_entered" from="LavaSpinner3" to="LavaSpinner3" method="_on_LavaSpinner_body_entered"]

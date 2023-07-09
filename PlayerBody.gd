@@ -12,7 +12,6 @@ var gravity_rotation = 0
 var velocity = Vector2(0, 0)
 var drag_coefficient = 0.01
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -27,6 +26,8 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("toggle_gravity"):
 		space_sound.play()
 		grav_reversed = !grav_reversed
+		visual_char.target_rotation = PI if grav_reversed else 0
+		
 		
 
 	# add gravity

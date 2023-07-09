@@ -10,6 +10,7 @@ const max_offset = eye_radius - pupil_radius
 
 var left_offset = Vector2(0, 0)
 var right_offset = Vector2(0, 0)
+var target_rotation = 0
 
 #rng
 var rand = RandomNumberGenerator.new()
@@ -25,6 +26,10 @@ func _draw():
 	# draw circle
 	draw_circle(Vector2(0, 0), 10, Color(0, 0, 0))
 
+	# interpolate rotation to target rotation
+	rotation = rotation * .9 + target_rotation * .1
+	
+
 	# # draw 10 random circles
 	# for _i in range(50):
 	# 	var r = rand.randf_range(0, 8)
@@ -37,7 +42,7 @@ func _draw():
 	draw_circle(right.position, eye_radius, Color(1,1,1))
 
 	# make eyes look in the direction we are moving
-	var eyes_target = Vector2(velocity)
+	var eyes_target = Vector2(velocity).rotated(-rotation)
 	var look_strength = eyes_target.length() * .03
 
 	var left_pupil_offset_target = (eyes_target - left.position).normalized() * look_strength

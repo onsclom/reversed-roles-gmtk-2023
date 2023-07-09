@@ -1,17 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Triangles.gd" type="Script" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
-[ext_resource path="res://PlayerBody.gd" type="Script" id=3]
 [ext_resource path="res://PlayerBody.tscn" type="PackedScene" id=4]
 
 [node name="Player" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="Triangles" type="Node2D" parent="."]
+visible = false
 script = ExtResource( 1 )
 
 [node name="PlayerBody" parent="." instance=ExtResource( 4 )]
 position = Vector2( 120, 35 )
 collision_mask = 3
-script = ExtResource( 3 )

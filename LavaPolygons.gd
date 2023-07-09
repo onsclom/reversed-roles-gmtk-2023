@@ -34,8 +34,6 @@ func _on_LavaPolygons_body_entered(body):
 	# add particles in current scene
 	add_child(particles)
 	particles.emitting = true
-
-	print("TOUCHED LAVA")
 	SceneManager.lose_level_and_reset()
 
 
